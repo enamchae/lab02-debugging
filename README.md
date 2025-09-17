@@ -1,4 +1,12 @@
 # lab02-debugging
+1. Daniel Chen
+2. https://www.shadertoy.com/view/tfsfDf
+3. bugs:
+   1. type and variable name typo at `vec uv`, needs to be `vec2 uv2`
+   2. pass `uv2` to `raycast` instead of `uv` to use [-1, 1] coords
+   3. divide by `iResolution.y` instead of `iResolution.x` to fix aspect ratio
+   4. adjust number of ray march iterations from 64 to 512 to avoid the floor being clipped
+   5. pass `dir` as first arg to `reflect` instead of `eye`
 
 # Setup 
 
